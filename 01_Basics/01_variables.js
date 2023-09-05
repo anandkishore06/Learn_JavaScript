@@ -1,3 +1,7 @@
+/* 
+What are Variables ?
+- Variables are the name of memory location where we can store data.
+*/
 // There are four Ways to Declare Variables in JavaScript
 
 // 01. Using var keyword
