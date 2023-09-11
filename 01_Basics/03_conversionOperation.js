@@ -85,3 +85,12 @@ console.log(res); // NaN
 res = Number(NaN);
 console.log(res); // NaN
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+console.log("+++++++++++++++++++++++++++++++++++");
+
+let num3 = 30;
+let num4 = num3;
+num4 = 40;
+console.log(num3);
+console.log(num4);
