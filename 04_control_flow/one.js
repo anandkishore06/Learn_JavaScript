@@ -48,3 +48,35 @@ function checkEvenOdd(num){
 }
 
 checkEvenOdd(number)
+
+
+// with logical operator
+
+const userLoggedIn = true
+const userLoggedOut = false
+const userage = 18
+
+if(userLoggedIn && userage >= 18){
+    console.log("Allow user to buy something");
+}else{
+    console.log("Don't Allow");
+}
+
+// difference btw == and ===
+
+let val1 = "2"
+let val2 = 2
+
+if(val1 == val2){
+    console.log(`Only checked the data`);
+}
+if(val1 ===  val2){
+    console.log(`Checked Data as well as Data Type`);
+}else{
+    console.log("Different Data Types");
+}
+
+
+// Note -++++++++++++++++++++++++++++
+
+if(val1 == val2)console.log("Hello"),console.log("World"); // Hello World
