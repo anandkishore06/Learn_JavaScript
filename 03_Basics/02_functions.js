@@ -25,3 +25,8 @@ function returnSecondValue(getArray){
 console.log(returnSecondValue(arr));
 
 console.log(returnSecondValue([20,29,40]));
+
+function addTwo(num1, num2){
+    return num1 + num2
+}
+console.log(addTwo(...arr)); // acts as spread operator
