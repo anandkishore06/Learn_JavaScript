@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM learning on Tea Or Code
+        <span style="display: none;">Test Text</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+<script>
+    // How to select elements
+
+    //01. By Tag Name || By ClassName || querySelector || querySelectorAll
+
+    const title = document.getElementById('title') 
+
+    // const title = document.getElementsByClassName('title') 
+
+    // Select text in elements
+
+    const inHtml = title.innerHTML
+    console.log(inHtml); // DOM learning on Tea Or Code
+        //<span style="display: none;">Test Text</span>
+
+    const inContent = title.textContent
+    console.log(inContent); //DOM learning on Tea Or Code
+        //Test Text
+
+    const inText = title.innerText
+    console.log(inText); // DOM learning on Tea Or Code
+
+    
+
+
+</script>
+</html>
