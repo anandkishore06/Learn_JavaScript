@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaiOrCode</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+
+<script>
+
+    // how to add an Element using function in JS
+    // Here, we have to traverse all the node trees, that's why it is time consuming
+
+    function addLangauge(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addLangauge("python")
+    addLangauge("typescript")
+
+    // optimize Approach
+
+    function addLangaugeOpt(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLangaugeOpt("Java")
+
+    // Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "MOJO"  
+    const newli = document.createElement('li')
+    newli.textContent = "MOJO"
+    secondLang.replaceWith(newli)
+
+    const firstLang = document.querySelector("li:first-child")
+    console.log(firstLang);
+    firstLang.outerHTML = '<li>cpp</li>'
+
+    // remove element
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
