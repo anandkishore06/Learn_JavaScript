@@ -5,7 +5,7 @@
 
 # Solutin Code
 
-## Project 1
+## Project 1 -  BackGround Color Changer
 
 ```javascript
 console.log("Anand")
@@ -36,7 +36,7 @@ buttons.forEach( (button) => {
 
 
 ```
-## Project 2
+## Project 2 - Calculate BMI
 
 ```javascript
 const form = document.querySelector('form');
@@ -64,4 +64,14 @@ form.addEventListener('submit', (e) => {
 
 });
 
+```
+## Project 3 - Digital Clock
+
+```javascript
+const clock = document.getElementById('clock')
+setInterval(() => {
+  let date = new Date()
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString()
+}, 1000)
 ```
