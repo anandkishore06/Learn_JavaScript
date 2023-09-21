@@ -12,8 +12,8 @@ console.log(x);
 let y = 10;
 console.log(y);
 
-// 03. Using const keyword
-const z = 30;
+// 03. Using const keyword, initilization and declaration
+const z = 20;
 console.log(z);
 
 // 04. without using any keyword (default)
