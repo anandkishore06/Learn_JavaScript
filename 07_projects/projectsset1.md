@@ -3,7 +3,7 @@
 ## Project Link 
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-cwa7f9?file=index.html)
 
-# Solutin Code
+# Solution Code
 
 ## Project 1 -  BackGround Color Changer
 
