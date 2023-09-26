@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body bgcolor="rgb(0,120,255)">
+    <button id="btn1">Bg-Color Change</button>
+    <!-- <h1 style="border: 10px;color: white;" id="h1">Keep Your Mouse Here, MouseOver Event</h1> -->
+    <button id="btn2"> Click me! </button>
+</body>
+<script>
+    const btn1 = document.getElementById('btn1')
+    const body = document.querySelector('body')
+    // Click Events
+    btn1.addEventListener('click', () => {
+        body.style.backgroundColor = 'yellow'
+    })
+
+    // MouseOver Event
+
+    const h1 = document.getElementById('h1')
+    h1.addEventListener('mouseover', ()=>{
+        alert('Hii There!')
+    })
+
+
+  let btn = document.getElementById("btn2");
+  btn.addEventListener("mousedown", event => {
+    if (event.btn == 0) {
+      console.log("Left mouse button was pressed");
+    } else if (event.btn == 1) {
+      console.log("Middle mouse button was pressed");
+    } else if (event.btn == 2) {
+      console.log("Right mouse button was pressed");
+    }
+  });
+
+
+</script>
+</html>
